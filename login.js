@@ -7,6 +7,7 @@ import {
   signInWithPopup,
 } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js";
 
+
 (function () {
   // Your web app's Firebase configuration, get it from your firebase project settings page on the General tab.
   const firebaseConfig = {
@@ -19,16 +20,16 @@ import {
     measurementId: "G-ZQXKKZFTC4"
   };
   // Initialize Firebase
-  // firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
   const app = initializeApp(firebaseConfig);
   // Initialize Firebase Authentication and get a reference to the service
   const auth = getAuth(app);
-
+  
   // TODO: initialize provider for google auth
   const provider = new GoogleAuthProvider();
-
+  provider.initializeApp(app)
   console.log("app initialized...");
-
+  
   // get elements
   const email = document.getElementById("email");
   const password = document.getElementById("password");

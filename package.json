@@ -1,0 +1,19 @@
+{
+  "name": "firebase_auth_google",
+  "version": "1.0.0",
+  "description": "test app for displaying google authentication from firebase",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Yount/firebase_auth_google.git"
+  },
+  "author": "michael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Michael-Yount/firebase_auth_google/issues"
+  },
+  "homepage": "https://github.com/Michael-Yount/firebase_auth_google#readme"
+}
